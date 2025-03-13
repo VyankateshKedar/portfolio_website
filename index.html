@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vyankatesh Kedar | Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+        }
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800 scroll-smooth">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-600">VK</a>
+            <div class="hidden md:flex space-x-10 items-center">
+                <a href="#about" class="hover:text-indigo-600 transition duration-300">About</a>
+                <a href="#experience" class="hover:text-indigo-600 transition duration-300">Experience</a>
+                <a href="#education" class="hover:text-indigo-600 transition duration-300">Education</a>
+                <a href="#projects" class="hover:text-indigo-600 transition duration-300">Projects</a>
+                <a href="#skills" class="hover:text-indigo-600 transition duration-300">Skills</a>
+                <a href="#contact" class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition duration-300">Contact</a>
+            </div>
+            <button id="menu-toggle" class="md:hidden text-gray-600 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <div class="container mx-auto px-6 py-3 flex flex-col space-y-4">
+                <a href="#about" class="hover:text-indigo-600 transition duration-300">About</a>
+                <a href="#experience" class="hover:text-indigo-600 transition duration-300">Experience</a>
+                <a href="#education" class="hover:text-indigo-600 transition duration-300">Education</a>
+                <a href="#projects" class="hover:text-indigo-600 transition duration-300">Projects</a>
+                <a href="#skills" class="hover:text-indigo-600 transition duration-300">Skills</a>
+                <a href="#contact" class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition duration-300 text-center">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="py-20 gradient-bg text-white">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-5xl font-bold mb-4">Vyankatesh Kedar</h1>
+                <h2 class="text-2xl mb-6">Python & Web Developer</h2>
+                <p class="text-lg mb-8">I am a recent Computer Science graduate currently working as a Python Developer at Marma.ai and a Frontend Developer at PayPerJump.</p>
+                <div class="flex space-x-4">
+                    <a href="mailto:vyankateshkedar924@gmail.com" class="bg-white text-indigo-600 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 transition duration-300">
+                        <i class="fas fa-envelope mr-2"></i> Email Me
+                    </a>
+                    <a href="https://www.linkedin.com/in/vyankatesh-kedar-894b79187" target="_blank" class="bg-transparent border-2 border-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-indigo-600 transition duration-300">
+                        <i class="fab fa-linkedin mr-2"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+            <!-- <div class="md:w-1/2 flex justify-center">
+                <img src="/api/placeholder/400/400" alt="Vyankatesh Kedar" class="rounded-full h-64 w-64 object-cover border-4 border-white shadow-xl">
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg text-center shadow-md hover:shadow-xl transition duration-300">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Development Skills</h3>
+                    <p>Python, JavaScript, ReactJS, Laravel, Tailwind CSS</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg text-center shadow-md hover:shadow-xl transition duration-300">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Professional Experience</h3>
+                    <p>Working with Marma.ai and PayPerJump on real-world projects</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg text-center shadow-md hover:shadow-xl transition duration-300">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Projects Completed</h3>
+                    <p>6+ projects including websites and web applications</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Work Experience</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="border-l-4 border-indigo-600 pl-6 mb-12 relative">
+                    <div class="absolute w-4 h-4 bg-indigo-600 rounded-full -left-2 top-0"></div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-bold text-indigo-600">Python Developer</h3>
+                            <span class="text-sm font-semibold bg-indigo-100 text-indigo-800 py-1 px-3 rounded-full">Jun 2024 - Present</span>
+                        </div>
+                        <h4 class="text-lg font-semibold mb-4">Marma.ai</h4>
+                        <ul class="space-y-2 list-disc list-inside text-gray-700">
+                            <li>Utilized data analysis skills to drive business insights and inform strategic decisions</li>
+                            <li>Designed and implemented automation scripts to streamline processes</li>
+                            <li>Optimized SQL queries to facilitate large-scale data processing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-l-4 border-indigo-600 pl-6 mb-12 relative">
+                    <div class="absolute w-4 h-4 bg-indigo-600 rounded-full -left-2 top-0"></div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-bold text-indigo-600">Web Developer</h3>
+                            <span class="text-sm font-semibold bg-indigo-100 text-indigo-800 py-1 px-3 rounded-full">Mar 2024 - Present</span>
+                        </div>
+                        <h4 class="text-lg font-semibold mb-4">PayPerJump</h4>
+                        <ul class="space-y-2 list-disc list-inside text-gray-700">
+                            <li>Developed and maintained frontend applications using JavaScript, PHP, and Tailwind CSS</li>
+                            <li>Enhanced user interface and user experience through meticulous attention to detail</li>
+                            <li>Collaborated with backend developers to optimize application performance</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-l-4 border-indigo-600 pl-6 relative">
+                    <div class="absolute w-4 h-4 bg-indigo-600 rounded-full -left-2 top-0"></div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-bold text-indigo-600">WordPress Developer Intern</h3>
+                            <span class="text-sm font-semibold bg-indigo-100 text-indigo-800 py-1 px-3 rounded-full">Nov 2022 - Dec 2022</span>
+                        </div>
+                        <h4 class="text-lg font-semibold mb-4">Exact Funnel</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Education</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-indigo-600 mb-2">B.Tech in Computer Science Engineering</h3>
+                    <p class="text-lg mb-2">Dr. Babasaheb Ambedkar Technological University, Lonere</p>
+                    <p class="text-sm font-medium text-gray-600 mb-2">Dec 2021 - Jun 2024</p>
+                    <p>CGPA: 6.49</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-indigo-600 mb-2">Diploma</h3>
+                    <p class="text-lg mb-2">CIPET, Aurangabad</p>
+                    <p class="text-sm font-medium text-gray-600 mb-2">Jul 2019 - Jun 2021</p>
+                    <p>Percentage: 85%</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-indigo-600 mb-2">Higher Secondary (12th)</h3>
+                    <p class="text-lg mb-2">Marotrao Patil, Aurangabad</p>
+                    <p class="text-sm font-medium text-gray-600 mb-2">Jun 2017 - Jun 2018</p>
+                    <p>Percentage: 78%</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-indigo-600 mb-2">Secondary School (10th)</h3>
+                    <p class="text-lg mb-2">Mukul Mandir, Aurangabad</p>
+                    <p class="text-sm font-medium text-gray-600 mb-2">Jun 2015 - Jun 2016</p>
+                    <p>Percentage: 72%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center">
+                        <h3 class="text-2xl font-bold text-white"><a href="https://mini-link-frontend-mn8z.vercel.app/" target="_blank">URL Shortener</a></h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-sm font-semibold bg-indigo-100 text-indigo-800 py-1 px-3 rounded-full">Jan 2025 - Feb 2025</span>
+                            <span class="text-sm font-medium text-gray-600">MERN Stack</span>
+                        </div>
+                        <p class="text-gray-700">A URL shortening application implemented with MongoDB, Express, React, and Node.js.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center">
+                        <h3 class="text-2xl font-bold text-white"><a href="https://copperchilli.com/" target="_blank">CopperChilli Website</a></h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-sm font-semibold bg-indigo-100 text-indigo-800 py-1 px-3 rounded-full">Dec 2024 - Jan 2025</span>
+                            <span class="text-sm font-medium text-gray-600">HTML, JS, Tailwind, PHP</span>
+                        </div>
+                        <p class="text-gray-700">A comprehensive landing page website showcasing front-end and back-end development skills.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center">
+                        <h3 class="text-2xl font-bold text-white"><a href="https://bhaishreerealty.com/" target="_blank">BhaishreeRealty Website</a></h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-sm font-semibold bg-indigo-100 text-indigo-800 py-1 px-3 rounded-full">Jul 2024 - Sep 2024</span>
+                            <span class="text-sm font-medium text-gray-600">Laravel, HTML, CSS, JS</span>
+                        </div>
+                        <p class="text-gray-700">A Laravel-based website showcasing expertise in frontend development and framework understanding.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center">
+                        <h3 class="text-2xl font-bold text-white"><a href="https://lakhanihyundai.com/" target="_blank">Lakhani Hyundai Website</a></h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-sm font-semibold bg-indigo-100 text-indigo-800 py-1 px-3 rounded-full">Jun 2024</span>
+                            <span class="text-sm font-medium text-gray-600">HTML, CSS, JavaScript, PHP</span>
+                        </div>
+                        <p class="text-gray-700">A robust website for Lakhani Hyundai with dynamic functionality and server-side data processing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Skills & Expertise</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="p-4 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition duration-300 flex items-center">
+                        <i class="fab fa-python text-2xl text-indigo-600 mr-3"></i>
+                        <span class="font-medium">Python</span>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition duration-300 flex items-center">
+                        <i class="fas fa-database text-2xl text-indigo-600 mr-3"></i>
+                        <span class="font-medium">PL-SQL</span>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition duration-300 flex items-center">
+                        <i class="fas fa-robot text-2xl text-indigo-600 mr-3"></i>
+                        <span class="font-medium">Generative AI</span>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition duration-300 flex items-center">
+                        <i class="fab fa-css3 text-2xl text-indigo-600 mr-3"></i>
+                        <span class="font-medium">Tailwind CSS</span>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition duration-300 flex items-center">
+                        <i class="fab fa-js text-2xl text-indigo-600 mr-3"></i>
+                        <span class="font-medium">JavaScript</span>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition duration-300 flex items-center">
+                        <i class="fab fa-react text-2xl text-indigo-600 mr-3"></i>
+                        <span class="font-medium">ReactJS</span>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition duration-300 flex items-center">
+                        <i class="fas fa-database text-2xl text-indigo-600 mr-3"></i>
+                        <span class="font-medium">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Certifications</h2>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-certificate text-3xl text-indigo-600 mr-4"></i>
+                        <div>
+                            <h3 class="text-xl font-bold">EYGDS Django Training</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-certificate text-3xl text-indigo-600 mr-4"></i>
+                        <div>
+                            <h3 class="text-xl font-bold">100 Days of Python</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Get In Touch</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition duration-300">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition duration-300">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition duration-300"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded-lg font-medium hover:bg-indigo-700 transition duration-300">Send Message</button>
+                    </form>
+                </div>
+                <div class="space-y-8">
+                    <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                    <div class="flex items-start">
+                        <div class="bg-white rounded-full p-3 text-indigo-600 mr-4">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold">Email</h4>
+                            <a href="mailto:vyankateshkedar924@gmail.com" class="text-indigo-100 hover:text-white transition duration-300">vyankateshkedar924@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-white rounded-full p-3 text-indigo-600 mr-4">
+                            <i class="fas fa-phone text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold">Phone</h4>
+                            <a href="tel:+919021811260" class="text-indigo-100 hover:text-white transition duration-300">+91 9021811260</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-white rounded-full p-3 text-indigo-600 mr-4">
+                            <i class="fas fa-map-marker-alt text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold">Location</h4>
+                            <p class="text-indigo-100">Aurangabad, India</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-white rounded-full p-3 text-indigo-600 mr-4">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold">LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/vyankatesh-kedar-894b79187" target="_blank" class="text-indigo-100 hover:text-white transition duration-300">vyankatesh-kedar-894b79187</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold text-white">Vyankatesh Kedar</h3>
+                    <p class="mt-2">Python & Web Developer</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://www.linkedin.com/in/vyankatesh-kedar-894b79187" target="_blank" class="text-gray-300 hover:text-white transition duration-300">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="https://github.com/VyankateshKedar" target="_blank" class="text-gray-300 hover:text-white transition duration-300">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="mailto:vyankateshkedar924@gmail.com" class="text-gray-300 hover:text-white transition duration-300">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+                <p>&copy; 2025 Vyankatesh Kedar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
